@@ -1,4 +1,0 @@
-name
-_printf : returns the number of printed characters of a string and write the output to stdout
-synopsys
-description
