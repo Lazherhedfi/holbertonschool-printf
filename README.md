@@ -14,13 +14,13 @@ https://github.com/Lazherhedfi/holbertonschool-printf.git
 ```python
 %c print a single character.
 
-%d print a decimal (base 10) number.
+%d print a decimal
 
-%i print an integer in base 10.
+%i print an integer 
 
-%s print a string of characters.
+%s print a string 
 
-%% print a percent sign (% also works).
+%% print a percent 
 
 ```
 
