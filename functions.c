@@ -4,7 +4,7 @@
  * @list: list
  * Return: 1
  */
-int print_char(va_list list)
+int print_char(va_list list) // affiche les caractere kima houma 
 {
 	_putchar(va_arg(list, int));
 	return (1);
@@ -14,7 +14,7 @@ int print_char(va_list list)
  * @list: list
  * Return: i
  */
-int print_string(va_list list)
+int print_string(va_list list) // affiche jomla kemla fi blaset caractere (hared ) wehed
 {
 	int i;
 	char *s;
@@ -32,7 +32,7 @@ int print_string(va_list list)
  *@list: argument
  * Return: 1
  */
-int print_percent(__attribute__((unused))va_list list)
+int print_percent(__attribute__((unused))va_list list) // bech nwali affichi percentage 
 {
 
 	_putchar('%');
@@ -44,21 +44,21 @@ int print_percent(__attribute__((unused))va_list list)
  * @args: argument pointer
  * Return: i
  */
-int print_int(va_list args)
+int print_int(va_list args) // print_int bech nwali affichi numbers
 {
 	int n = va_arg(args, int);
 	unsigned int x;
 	int i = 0;
 	int d = 1;
 
-	if (n < 0)
+	if (n < 0) // bech nzido negative "-" lil printf bech iwali yafichi les caractere negativ 
 	{
 		_putchar('-');
 		n = n * -1;
 		i++;
 	}
 	x = n;
-	while ((x / d) > 9)
+	while ((x / d) > 9) // bech nkhali printf yekteb les numero mel lisar lel limin 
 		d = d * 10;
 	while (d > 0)
 	{
