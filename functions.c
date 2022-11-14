@@ -4,7 +4,7 @@
  * @list: list
  * Return: 1
  */
-int print_char(va_list list) // affiche les caractere kima houma 
+int print_char(va_list list)
 {
 	_putchar(va_arg(list, int));
 	return (1);
@@ -14,7 +14,7 @@ int print_char(va_list list) // affiche les caractere kima houma
  * @list: list
  * Return: i
  */
-int print_string(va_list list) // affiche jomla kemla fi blaset caractere (hared ) wehed
+int print_string(va_list list)
 {
 	int i;
 	char *s;
@@ -32,7 +32,7 @@ int print_string(va_list list) // affiche jomla kemla fi blaset caractere (hared
  *@list: argument
  * Return: 1
  */
-int print_percent(__attribute__((unused))va_list list) // bech nwali affichi percentage 
+int print_percent(__attribute__((unused))va_list list)
 {
 
 	_putchar('%');
