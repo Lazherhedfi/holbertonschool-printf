@@ -44,21 +44,21 @@ int print_percent(__attribute__((unused))va_list list)
  * @args: argument pointer
  * Return: i
  */
-int print_int(va_list args) // print_int bech nwali affichi numbers
+int print_int(va_list args) 
 {
 	int n = va_arg(args, int);
 	unsigned int x;
 	int i = 0;
 	int d = 1;
 
-	if (n < 0) // bech nzido negative "-" lil printf bech iwali yafichi les caractere negativ 
+	if (n < 0) 
 	{
 		_putchar('-');
 		n = n * -1;
 		i++;
 	}
 	x = n;
-	while ((x / d) > 9) // bech nkhali printf yekteb les numero mel lisar lel limin 
+	while ((x / d) > 9) 
 		d = d * 10;
 	while (d > 0)
 	{
