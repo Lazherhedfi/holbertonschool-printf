@@ -1,11 +1,11 @@
-.TH man 3 "25 jul 2021" "0.1" "_printf man page"
+.TH man 3 "12 Nov 2022" "0.1" "_printf man page"
 
 .Sh NAME
 .B _print
 - print data according to specified format.
 
 .SH SYNOPSIS
-.B #include "holberton.h"
+.B #include "main.h"
 .B int printf(const char *
 .RBformat
 .RB, ...);
@@ -54,7 +54,7 @@
 To use the _printf function you simply need to compile all files .c including the header holberton.h with a main function.
 
 .B main.c
-#include "holberton.h"
+#include "main.h"
 
 int main(void)
    {
